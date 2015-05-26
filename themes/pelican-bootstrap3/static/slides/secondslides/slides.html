@@ -22,7 +22,39 @@
 <li>Drink coffee</li>
 </ul>
 </section>
-<section id="in-the-evening" class="titleslide slide level1"><h1>In the evening</h1></section><section id="dinner" class="slide level2">
+<section id="in-the-evening" class="titleslide slide level1"><h1>In the evening</h1></section><section id="adding-some-source-code-here.-haskell" class="slide level2">
+<h1>Adding some source code here. (Haskell)</h1>
+<table class="sourceCode haskell numberLines" id="mycode" startFrom="100"><tr class="sourceCode"><td class="lineNumbers"><pre>100
+101
+102
+</pre></td><td class="sourceCode"><pre><code class="sourceCode haskell">qsort []     <span class="fu">=</span> []
+qsort (x<span class="fu">:</span>xs) <span class="fu">=</span> qsort (filter (<span class="fu">&lt;</span> x) xs) <span class="fu">++</span> [x] <span class="fu">++</span>
+               qsort (filter (<span class="fu">&gt;=</span> x) xs)</code></pre></td></tr></table>
+</section><section id="moar-code.-javascript" class="slide level2">
+<h1>Moar code. (Javascript)</h1>
+<table class="sourceCode javascript numberLines" id="mycode"><tr class="sourceCode"><td class="lineNumbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="sourceCode"><pre><code class="sourceCode javascript"><span class="kw">for</span> (<span class="kw">var</span> i=<span class="dv">0</span>; i &lt; <span class="ot">data</span>.<span class="fu">length</span>; i++) {
+  totalTemperature = <span class="dv">0</span>;
+
+  <span class="kw">for</span> (<span class="kw">var</span> j=<span class="dv">0</span>; j &lt; data[i].<span class="ot">temperatures</span>.<span class="fu">length</span>; j++) {
+    totalTemperature += data[i].<span class="fu">temperatures</span>[j];
+  }
+
+  averageTemperature = totalTemperature / data[i].<span class="ot">temperatures</span>.<span class="fu">length</span>;
+
+  <span class="ot">coords</span>.<span class="fu">push</span>([averageTemperature, data[i].<span class="fu">population</span>]);
+}</code></pre></td></tr></table>
+</section><section id="dinner" class="slide level2">
 <h1>Dinner</h1>
 <ul>
 <li>Eat spaghetti</li>
@@ -154,6 +186,10 @@
   section[aria-selected] { pointer-events: auto;}
   body {display: none}
   body.loaded {display: block}
+
+table.sourceCode {
+  font-size: 18px;
+}
 </style>
 
 <script>

@@ -18,6 +18,30 @@
 
 # In the evening
 
+## Adding some source code here. (Haskell)
+
+~~~~ {#mycode .haskell .numberLines startFrom="100"}
+qsort []     = []
+qsort (x:xs) = qsort (filter (< x) xs) ++ [x] ++
+               qsort (filter (>= x) xs)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## Moar code. (Javascript)
+
+~~~~ {#mycode .javascript .numberLines}
+for (var i=0; i < data.length; i++) {
+  totalTemperature = 0;
+
+  for (var j=0; j < data[i].temperatures.length; j++) {
+    totalTemperature += data[i].temperatures[j];
+  }
+
+  averageTemperature = totalTemperature / data[i].temperatures.length;
+
+  coords.push([averageTemperature, data[i].population]);
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ## Dinner
 
 - Eat spaghetti
