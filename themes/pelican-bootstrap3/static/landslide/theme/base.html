@@ -15,10 +15,10 @@
       {{ css.screen.contents }}
     </style>
     {% else %}
-<!--
+
     <link rel="stylesheet" media="print" href="{{ css.print.path_url }}">
     <link rel="stylesheet" media="screen, projection" href="{{ css.screen.path_url }}">
--->
+
     {% endif %}
     {% for css in user_css %}
       {% if embed %}
@@ -86,7 +86,7 @@
 <!-- Style -->
 <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <style>
-  html { background-color: black; }
+
   a { color: #FF0066; } a:hover {text-decoration: underline;}
   footer { position: absolute; bottom: 50px; right: 50px; }
   strong {color: #FF0066}
@@ -95,7 +95,9 @@
       background-color: white;
       color: white;
       font-size: 2em;
-      background: #1C1C1C;
+        background: -webkit-gradient(linear, left bottom, left top, from(#bbd), to(#fff));
+        background-color: #eee;
+        background: -moz-linear-gradient(bottom, #bbd, #fff);
   }
 
 
@@ -105,7 +107,7 @@
       -webkit-transition: left 400ms linear 0s;
       -ms-transition: left 400ms linear 0s;
       transition: left 400ms linear 0s;
-      background: #1C1C1C;
+
   }
   section { left: -150%; }
   section[aria-selected] { left: 0; }
@@ -114,31 +116,10 @@
   .chapter { background-color: black;}
   .chapter h1 {line-height: 600px; vertical-align: middle; margin: 0; text-align: center; display: block}
 
-  h1 {
-      margin: 50px 100px 0 100px;
-      font-size: 50px;
-      text-shadow: 0px -1px 0px #000;
-      text-align: left;
-  }
-  h2 {
-      color: #FAE50B;
-      margin: 70px 0 0 0;
-      font-size: 40px;
-      text-align: center;
-  }
-  ul {
-      margin-top: 70px;
-      font-size: 35px;
-      text-align: right;
-      border-right: 4px solid white;
-      padding-right: 40px;
-      min-width: 310px;
-      margin-left: 50px;
-      display: inline-block;
-  }
+
+
   q, p {
-      margin: 50px auto 0 auto;
-      width: 500px;
+      font-size: 18px;
   }
   q:after {content: ""}
   q:before {content: ""}
@@ -191,6 +172,11 @@
 
 table.sourceCode {
   font-size: 18px;
+}
+
+img {
+  max-width: 30%;
+  margin: 16px auto;
 }
 </style>
 

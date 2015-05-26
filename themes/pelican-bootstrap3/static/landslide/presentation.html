@@ -1,35 +1,17 @@
 <!DOCTYPE html>
-<!--
-  Copyright 2010 Google Inc.
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-
-  Original slides: Marcin Wichary (mwichary@google.com)
-  Modifications: Ernest Delgado (ernestd@google.com)
-                 Alex Russell (slightlyoff@chromium.org)
-
-  landslide modifications: Adam Zapletal (adamzap@gmail.com)
-                           Nicolas Perriault (nperriault@gmail.com)
--->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Landslide</title>
     <!-- Styles -->
     
+
     <link rel="stylesheet" media="print" href="theme/css/print.css">
     <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
+
     
     
     <!-- /Styles -->
@@ -41,88 +23,41 @@
     
     <!-- /Javascripts -->
 </head>
-<body>
-  <div id="blank"></div>
-  <div class="presentation">
-    <div id="current_presenter_notes">
-      <div id="presenter_note"></div>
-    </div>
-    <div class="slides">
-      
-      <!-- slide source: slide1.md -->
-      <div class="slide-wrapper">
-        <div class="slide slide-1">
-          <div class="inner">
-            
-            <header><h1>Landslide</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slide1.md">slide1.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              1/3
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slide1.md -->
-      <div class="slide-wrapper">
-        <div class="slide slide-2">
-          <div class="inner">
-            
-            <header><h1>Overview</h1></header>
-            
-            
-            <section><p>Generate HTML5 slideshows from markdown, ReST, or textile.</p>
-<p><img alt="python" src="http://i.imgur.com/bc2xk.png" /></p>
+<body class="loaded" style="-webkit-transform: scale(0.875); transform: scale(0.875);">
+
+
+
+
+
+<section class="slide level2">
+    
+        <h1>Landslide</h1>
+    
+    
+</section>
+
+<section class="slide level2">
+    
+        <h1>Overview</h1>
+    
+    
+        <p>Generate HTML5 slideshows from markdown, ReST, or textile.</p>
+<p><img alt="spaghetti" src="/theme/slides/secondslides/images/spaghetti.jpg" /></p>
 <p>Landslide is primarily written in Python, but it's themes use:</p>
 <ul>
 <li>HTML5</li>
 <li>Javascript</li>
 <li>CSS</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slide1.md">slide1.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              2/3
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slide1.md -->
-      <div class="slide-wrapper">
-        <div class="slide has_code slide-3">
-          <div class="inner">
-            
-            <header><h1>Code Sample</h1></header>
-            
-            
-            <section><p>Landslide supports code snippets</p>
+</ul>
+    
+</section>
+
+<section class="slide level2">
+    
+        <h1>Code Sample</h1>
+    
+    
+        <p>Landslide supports code snippets</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -135,106 +70,118 @@
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
 </pre></div>
-</td></tr></table></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slide1.md">slide1.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              3/3
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-  <div id="toc" class="sidebar hidden">
-    <h2>Table of Contents</h2>
-    <table>
-      <caption>Table of Contents</caption>
-      
-      <tr id="toc-row-1">
-        <th><a href="#slide1">Landslide</a></th>
-        <td><a href="#slide1">1</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-2">
-        <th><a href="#slide2">Overview</a></th>
-        <td><a href="#slide2">2</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-3">
-        <th><a href="#slide3">Code Sample</a></th>
-        <td><a href="#slide3">3</a></td>
-      </tr>
-      
-      
-    </table>
-  </div>
-  
-  <div id="help" class="sidebar hidden">
-    <h2>Help</h2>
-    <table>
-      <caption>Help</caption>
-      <tr>
-        <th>Table of Contents</th>
-        <td>t</td>
-      </tr>
-      <tr>
-        <th>Exposé</th>
-        <td>ESC</td>
-      </tr>
-      <tr>
-        <th>Full screen slides</th>
-        <td>e</td>
-      </tr>
-      <tr>
-        <th>Presenter View</th>
-        <td>p</td>
-      </tr>
-      <tr>
-        <th>Source Files</th>
-        <td>s</td>
-      </tr>
-      <tr>
-        <th>Slide Numbers</th>
-        <td>n</td>
-      </tr>
-      <tr>
-        <th>Toggle screen blanking</th>
-        <td>b</td>
-      </tr>
-      <tr>
-        <th>Show/hide slide context</th>
-        <td>c</td>
-      </tr>
-      <tr>
-        <th>Notes</th>
-        <td>2</td>
-      </tr>
-      <tr>
-        <th>Help</th>
-        <td>h</td>
-      </tr>
-    </table>
-  </div>
+</td></tr></table>
+    
+</section>
+
 <!--
   <script>main()</script>
 -->
+
+
+
+
+
+
+
+
+<!-- Style -->
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<style>
+
+  a { color: #FF0066; } a:hover {text-decoration: underline;}
+  footer { position: absolute; bottom: 50px; right: 50px; }
+  strong {color: #FF0066}
+  body {
+      font-family: 'Oswald', arial, serif;
+      background-color: white;
+      color: white;
+      font-size: 2em;
+        background: -webkit-gradient(linear, left bottom, left top, from(#bbd), to(#fff));
+        background-color: #eee;
+        background: -moz-linear-gradient(bottom, #bbd, #fff);
+  }
+
+
+  /* Transition effect */
+  section {
+      -moz-transition: left 400ms linear 0s;
+      -webkit-transition: left 400ms linear 0s;
+      -ms-transition: left 400ms linear 0s;
+      transition: left 400ms linear 0s;
+
+  }
+  section { left: -150%; }
+  section[aria-selected] { left: 0; }
+  section[aria-selected] ~ section { left: +150% }
+
+  .chapter { background-color: black;}
+  .chapter h1 {line-height: 600px; vertical-align: middle; margin: 0; text-align: center; display: block}
+
+
+
+  q, p {
+      font-size: 18px;
+  }
+  q:after {content: ""}
+  q:before {content: ""}
+  q {
+      display: block;
+      margin-top: 140px;
+  }
+  video {
+      position: absolute;
+      top: 210px;
+      width: 260px;
+      left: 445px;
+      box-shadow: 0 0 10px black;
+  }
+  #arrow {
+      position: absolute;
+      top: 165px;
+      left: 460px;
+      font-size: 100px;
+      color: white;
+
+  }
+  li {list-style-type: none}
+
+</style>
+
+
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; }
+  details {display: none;}
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  html {
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto;}
+  body {display: none}
+  body.loaded {display: block}
+
+table.sourceCode {
+  font-size: 18px;
+}
+
+img {
+  max-width: 30%;
+  margin: 16px auto;
+}
+</style>
+
 <script>
   var friendWindows = [];
   var idx = 1;
