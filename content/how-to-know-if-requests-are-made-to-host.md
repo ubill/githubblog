@@ -58,4 +58,4 @@ making the output nicer or less spammy from that irritating
 'info message' that I mentioned. But perhaps someone out there has already done this
 in a better/another way before.
 
-Shoutout to: **Farith** who was the originator of this question.
+*Shoutout to: **Farith** who was the originator of this question.*
